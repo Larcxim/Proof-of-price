@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: proof-of-price-judge-demo
+    runtime: python
+    plan: free
+    buildCommand: python -m py_compile cloud_serve.py serve.py binance_web3_rwa.py
+    startCommand: python cloud_serve.py
+    healthCheckPath: /health
+    envVars:
+      - key: DEMO_USERNAME
+        value: judge
+      - key: DEMO_PASSWORD
+        sync: false
+      - key: OC_API_KEY
+        sync: false
+      - key: OC_SECRET_KEY
+        sync: false
