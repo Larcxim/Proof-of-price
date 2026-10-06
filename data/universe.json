@@ -1,0 +1,772 @@
+{
+  "generated_at_utc": "2026-10-04T21:05:49Z",
+  "chain_id": "56",
+  "source": "https://www.binance.com/bapi/defi/v1/public/wallet-direct/buw/wallet/market/token/rwa/stock/detail/list/ai",
+  "venue_suffixes": {
+    "on": "ondo",
+    "x": "xstocks",
+    "B": "bstocks"
+  },
+  "tickers": {
+    "AAPL": {
+      "ondo": {
+        "symbol": "AAPLon",
+        "contract_address": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+        "chain_id": "56",
+        "list_multiplier": "1.003376073740221058"
+      },
+      "xstocks": {
+        "symbol": "AAPLx",
+        "contract_address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "AAPLB",
+        "contract_address": "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+        "chain_id": "56",
+        "list_multiplier": "1.000603906075632366"
+      }
+    },
+    "ADBE": {
+      "ondo": {
+        "symbol": "ADBEon",
+        "contract_address": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "ADBEx",
+        "contract_address": "0x16e0b579be45baae54ceddd52e742b6457a7fe12",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "ADBEB",
+        "contract_address": "0x65c0249d49e3231540fd0db0a1ae9259e6eaaf57",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "AMD": {
+      "ondo": {
+        "symbol": "AMDon",
+        "contract_address": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "AMDx",
+        "contract_address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "AMDB",
+        "contract_address": "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "AMZN": {
+      "ondo": {
+        "symbol": "AMZNon",
+        "contract_address": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "AMZNx",
+        "contract_address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "AMZNB",
+        "contract_address": "0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "ASML": {
+      "ondo": {
+        "symbol": "ASMLon",
+        "contract_address": "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+        "chain_id": "56",
+        "list_multiplier": "1.005342942673895318"
+      },
+      "xstocks": {
+        "symbol": "ASMLx",
+        "contract_address": "0xc0b417e7f83db438631eb5e096684dd742e5294f",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "ASMLB",
+        "contract_address": "0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "ASTS": {
+      "ondo": {
+        "symbol": "ASTSon",
+        "contract_address": "0x45abf29515bc23f8c0ed2a06584444ce473a75fb",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "ASTSx",
+        "contract_address": "0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "ASTSB",
+        "contract_address": "0x58b6f5feeb8436489f5bf4a56619092b1fa8e777",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "AVGO": {
+      "ondo": {
+        "symbol": "AVGOon",
+        "contract_address": "0x0ed2e3180edf393e6bf8db124bd15ddd54de150a",
+        "chain_id": "56",
+        "list_multiplier": "1.006414494428012574"
+      },
+      "xstocks": {
+        "symbol": "AVGOx",
+        "contract_address": "0x38bac69cbbd28156796e4163b2b6dcb81e336565",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "AVGOB",
+        "contract_address": "0x76682c454467b3a1150ad8b6a92fc5ee2c21d7ed",
+        "chain_id": "56",
+        "list_multiplier": "1.001269208611258122"
+      }
+    },
+    "BMNR": {
+      "ondo": {
+        "symbol": "BMNRon",
+        "contract_address": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "BMNRx",
+        "contract_address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "BMNRB",
+        "contract_address": "0x3548da95a9effe481e8604664d75e95821e557f5",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "COIN": {
+      "ondo": {
+        "symbol": "COINon",
+        "contract_address": "0xf8589b526fdd65f7f301c605a6e04f0f1b4b3620",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "COINx",
+        "contract_address": "0x364f210f430ec2448fc68a49203040f6124096f0",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "COINB",
+        "contract_address": "0x585bde7c54abb5ccd7791f923d6c2187635f3952",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "CRCL": {
+      "ondo": {
+        "symbol": "CRCLon",
+        "contract_address": "0x992879cd8ce0c312d98648875b5a8d6d042cbf34",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "CRCLx",
+        "contract_address": "0xfebded1b0986a8ee107f5ab1a1c5a813491deceb",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "CRCLB",
+        "contract_address": "0x80f3d493ebce97e343c53d29a137942416b4ffc0",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "CRM": {
+      "ondo": {
+        "symbol": "CRMon",
+        "contract_address": "0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+        "chain_id": "56",
+        "list_multiplier": "1.007124163348934609"
+      },
+      "xstocks": {
+        "symbol": "CRMx",
+        "contract_address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "CRMB",
+        "contract_address": "0x8c433eca1be0e2a357015602f63751c768f6f643",
+        "chain_id": "56",
+        "list_multiplier": "1.001229509379034956"
+      }
+    },
+    "CRWD": {
+      "ondo": {
+        "symbol": "CRWDon",
+        "contract_address": "0xe6837794fbc6dd024733a1a31f86061296fa2752",
+        "chain_id": "56",
+        "list_multiplier": "4"
+      },
+      "xstocks": {
+        "symbol": "CRWDx",
+        "contract_address": "0x214151022c2a5e380ab80cdac31f23ae554a7345",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "CRWDB",
+        "contract_address": "0x814981cf5df4a14d4d7328f9abf0d02e9ed54cd1",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "EWY": {
+      "ondo": {
+        "symbol": "EWYon",
+        "contract_address": "0x12b7adc48416a103f63e7e6210f62c81dfb91fd0",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "EWYx",
+        "contract_address": "0x299c95eb52bfd5bc98d924bce17197b64864589b",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "EWYB",
+        "contract_address": "0xbe82f76637dba2c114c41df856c2c51e522e2cb8",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "GME": {
+      "ondo": {
+        "symbol": "GMEon",
+        "contract_address": "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+        "chain_id": "56",
+        "list_multiplier": "1.017138313418943429"
+      },
+      "xstocks": {
+        "symbol": "GMEx",
+        "contract_address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "GMEB",
+        "contract_address": "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "GOOGL": {
+      "ondo": {
+        "symbol": "GOOGLon",
+        "contract_address": "0x091fc7778e6932d4009b087b191d1ee3bac5729a",
+        "chain_id": "56",
+        "list_multiplier": "1.002460326637435211"
+      },
+      "xstocks": {
+        "symbol": "GOOGLx",
+        "contract_address": "0xe92f673ca36c5e2efd2de7628f815f84807e803f",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "GOOGLB",
+        "contract_address": "0x3f53de71c126bdabae20f9cd64848d317f6c3238",
+        "chain_id": "56",
+        "list_multiplier": "1.000478058978107511"
+      }
+    },
+    "GS": {
+      "ondo": {
+        "symbol": "GSon",
+        "contract_address": "0x0d4f9b25f81163fb4840ba4f434672543823000c",
+        "chain_id": "56",
+        "list_multiplier": "1.013764315605746387"
+      },
+      "xstocks": {
+        "symbol": "GSx",
+        "contract_address": "0x3ee7e9b3a992fd23cd1c363b0e296856b04ab149",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "GSB",
+        "contract_address": "0x20cce6656e5f7f79f280e2d0f5db55b401bdbfce",
+        "chain_id": "56",
+        "list_multiplier": "1.003406278840750514"
+      }
+    },
+    "HIMS": {
+      "ondo": {
+        "symbol": "HIMSon",
+        "contract_address": "0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "HIMSx",
+        "contract_address": "0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "HIMSB",
+        "contract_address": "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "HOOD": {
+      "ondo": {
+        "symbol": "HOODon",
+        "contract_address": "0x19601179a60f55ff6636f5d1a8b6671053bd60a8",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "HOODx",
+        "contract_address": "0xe1385fdd5ffb10081cd52c56584f25efa9084015",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "HOODB",
+        "contract_address": "0xa394dcea3fd3847fd793afbfd163e2e3858b7c65",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "IBM": {
+      "ondo": {
+        "symbol": "IBMon",
+        "contract_address": "0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464",
+        "chain_id": "56",
+        "list_multiplier": "1.022792376444627581"
+      },
+      "xstocks": {
+        "symbol": "IBMx",
+        "contract_address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "IBMB",
+        "contract_address": "0xfa273b076feb8c0fb34e554ae341082323d016a3",
+        "chain_id": "56",
+        "list_multiplier": "1.005005801623174456"
+      }
+    },
+    "INTC": {
+      "ondo": {
+        "symbol": "INTCon",
+        "contract_address": "0xa528caaa2f96090e379d43f90834c75df54d6e74",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "INTCx",
+        "contract_address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "INTCB",
+        "contract_address": "0xe614e2fc6c787035ff51f452e8e826bfd32d5283",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "IREN": {
+      "ondo": {
+        "symbol": "IRENon",
+        "contract_address": "0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "IRENx",
+        "contract_address": "0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "IRENB",
+        "contract_address": "0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "META": {
+      "ondo": {
+        "symbol": "METAon",
+        "contract_address": "0xd7df5863a3e742f0c767768cdfcb63f09e0422f6",
+        "chain_id": "56",
+        "list_multiplier": "1.002826918305349555"
+      },
+      "xstocks": {
+        "symbol": "METAx",
+        "contract_address": "0x96702be57cd9777f835117a809c7124fe4ec989a",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "METAB",
+        "contract_address": "0x7425889fe94f9d693e8daefe88bcced6acfef4c0",
+        "chain_id": "56",
+        "list_multiplier": "1.00054829041074495"
+      }
+    },
+    "MRVL": {
+      "ondo": {
+        "symbol": "MRVLon",
+        "contract_address": "0x1501ec83ffef405b4331cc4f73277a40fb0c627d",
+        "chain_id": "56",
+        "list_multiplier": "1.001483825466955279"
+      },
+      "xstocks": {
+        "symbol": "MRVLx",
+        "contract_address": "0xeaad46f4146ded5a47b55aa7f6c48c191deaec88",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "MRVLB",
+        "contract_address": "0x16cd4fe7e8880ecc3ba222795229e20489fc2c76",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "MSFT": {
+      "ondo": {
+        "symbol": "MSFTon",
+        "contract_address": "0x6bfe75d1ad432050ea973c3a3dcd88f02e2444c3",
+        "chain_id": "56",
+        "list_multiplier": "1.005730856892783903"
+      },
+      "xstocks": {
+        "symbol": "MSFTx",
+        "contract_address": "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "MSFTB",
+        "contract_address": "0x80106cb3ead06659a5ad19df39d9b4733863b9b0",
+        "chain_id": "56",
+        "list_multiplier": "1.001313964833366845"
+      }
+    },
+    "MSTR": {
+      "ondo": {
+        "symbol": "MSTRon",
+        "contract_address": "0x7313ea16493b2f55054df0131a3a14b043ec8992",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "MSTRx",
+        "contract_address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "MSTRB",
+        "contract_address": "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "MU": {
+      "ondo": {
+        "symbol": "MUon",
+        "contract_address": "0x8b6acf6041a81567f012ff6a4c6d96d5818d74bf",
+        "chain_id": "56",
+        "list_multiplier": "1.001121237525844732"
+      },
+      "xstocks": {
+        "symbol": "MUx",
+        "contract_address": "0xf6a873bae4ba1b304e45df52a4b7d176e1c6a8c4",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "MUB",
+        "contract_address": "0xcdf2f3e0fa43c47a6662a91c9e4a7c5f69762699",
+        "chain_id": "56",
+        "list_multiplier": "1.000107512568805603"
+      }
+    },
+    "NFLX": {
+      "ondo": {
+        "symbol": "NFLXon",
+        "contract_address": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+        "chain_id": "56",
+        "list_multiplier": "10"
+      },
+      "xstocks": {
+        "symbol": "NFLXx",
+        "contract_address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "NFLXB",
+        "contract_address": "0xd6829ea836b6fa224d099d40e54b31262f874631",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "NVDA": {
+      "ondo": {
+        "symbol": "NVDAon",
+        "contract_address": "0xa9ee28c80f960b889dfbd1902055218cba016f75",
+        "chain_id": "56",
+        "list_multiplier": "1.0017152487959898"
+      },
+      "xstocks": {
+        "symbol": "NVDAx",
+        "contract_address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "NVDAB",
+        "contract_address": "0x02fca66c1d1afb4e2a7884261eb00f63598a7436",
+        "chain_id": "56",
+        "list_multiplier": "1.000778223752807865"
+      }
+    },
+    "ORCL": {
+      "ondo": {
+        "symbol": "ORCLon",
+        "contract_address": "0x03e4bd1ea53f1da84513da0319d1f03dd1bbcf93",
+        "chain_id": "56",
+        "list_multiplier": "1.0079328914586566"
+      },
+      "xstocks": {
+        "symbol": "ORCLx",
+        "contract_address": "0x548308e91ec9f285c7bff05295badbd56a6e4971",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "ORCLB",
+        "contract_address": "0x4684d9887fc1c71cba7bab8e88835cec217eb598",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      }
+    },
+    "PLTR": {
+      "ondo": {
+        "symbol": "PLTRon",
+        "contract_address": "0x9351abd19f42101dd36025e495b98e910b255d78",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "PLTRx",
+        "contract_address": "0x6d482cec5f9dd1f05ccee9fd3ff79b246170f8e2",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "PLTRB",
+        "contract_address": "0x0ca5d51d0277bd006fd9607d3e560785ebad8222",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "PYPL": {
+      "ondo": {
+        "symbol": "PYPLon",
+        "contract_address": "0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+        "chain_id": "56",
+        "list_multiplier": "1.007790133219188067"
+      },
+      "xstocks": {
+        "symbol": "PYPLx",
+        "contract_address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "PYPLB",
+        "contract_address": "0x2806a561fc1f9259b2d54a281796bde0d92762ae",
+        "chain_id": "56",
+        "list_multiplier": "1.001771778812964209"
+      }
+    },
+    "QQQ": {
+      "ondo": {
+        "symbol": "QQQon",
+        "contract_address": "0x0cde6936d305d5b34667fc46425e852efd73559a",
+        "chain_id": "56",
+        "list_multiplier": "1.004082430180208355"
+      },
+      "xstocks": {
+        "symbol": "QQQx",
+        "contract_address": "0xa753a7395cae905cd615da0b82a53e0560f250af",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "QQQB",
+        "contract_address": "0x205812cdbed920aff76c6580abd681a46d11efc7",
+        "chain_id": "56",
+        "list_multiplier": "1.000724838657573033"
+      }
+    },
+    "SOXL": {
+      "ondo": {
+        "symbol": "SOXLon",
+        "contract_address": "0xb943c8a0d77b656daf5244da060d647fd9152289",
+        "chain_id": "56",
+        "list_multiplier": "1.000469412061933807"
+      },
+      "xstocks": {
+        "symbol": "SOXLx",
+        "contract_address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "SOXLB",
+        "contract_address": "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf",
+        "chain_id": "56",
+        "list_multiplier": "1.000441939278863313"
+      }
+    },
+    "SPCX": {
+      "ondo": {
+        "symbol": "SPCXon",
+        "contract_address": "0xd0a58bc9d88d3ff48c0294cb7e45937d0e41a928",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "SPCXx",
+        "contract_address": "0x68fa48b1c2fe52b3d776e1953e0e782b5044ce28",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "SPCXB",
+        "contract_address": "0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "SPY": {
+      "ondo": {
+        "symbol": "SPYon",
+        "contract_address": "0x6a708ead771238919d85930b5a0f10454e1c331a",
+        "chain_id": "56",
+        "list_multiplier": "1.009473072784042724"
+      },
+      "xstocks": {
+        "symbol": "SPYx",
+        "contract_address": "0x90a2a4c76b5d8c0bc892a69ea28aa775a8f2dd48",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "SPYB",
+        "contract_address": "0x7138b48df7d98d7e3cc221bfe7192d0a178182d8",
+        "chain_id": "56",
+        "list_multiplier": "1.001729792036835231"
+      }
+    },
+    "TQQQ": {
+      "ondo": {
+        "symbol": "TQQQon",
+        "contract_address": "0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4",
+        "chain_id": "56",
+        "list_multiplier": "1.004031631370312643"
+      },
+      "xstocks": {
+        "symbol": "TQQQx",
+        "contract_address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "TQQQB",
+        "contract_address": "0x462b5f13b7c7748279358962925c5de83bb9e598",
+        "chain_id": "56",
+        "list_multiplier": "1.001347622058686173"
+      }
+    },
+    "TSLA": {
+      "ondo": {
+        "symbol": "TSLAon",
+        "contract_address": "0x2494b603319d4d9f9715c9f4496d9e0364b59d93",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "xstocks": {
+        "symbol": "TSLAx",
+        "contract_address": "0x8ad3c73f833d3f9a523ab01476625f269aeb7cf0",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "TSLAB",
+        "contract_address": "0x5b1910eaad6450e50f816082aa078c41f10c292f",
+        "chain_id": "56",
+        "list_multiplier": "1.000000000000000000"
+      }
+    },
+    "TSM": {
+      "ondo": {
+        "symbol": "TSMon",
+        "contract_address": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+        "chain_id": "56",
+        "list_multiplier": "1.009320746408453452"
+      },
+      "xstocks": {
+        "symbol": "TSMx",
+        "contract_address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+        "chain_id": "56",
+        "list_multiplier": "1"
+      },
+      "bstocks": {
+        "symbol": "TSMB",
+        "contract_address": "0xab78b89b5bb00236be0b4b20704cbfa04efc711c",
+        "chain_id": "56",
+        "list_multiplier": "1.002110464141050983"
+      }
+    }
+  }
+}
