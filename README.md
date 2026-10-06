@@ -66,7 +66,7 @@ This updates `data/universe.json` before polling. The checked-in snapshot is der
 
 ## First live baseline (2026-10-04)
 
-The first full sweep completed in 45.8 seconds: 114/114 successful responses, 65 computable gaps, 38 bStocks rows with `stockInfo.price=null`, and 11 xStocks rows with `tokenInfo.price=null` (the multiplier was present). No transport or API errors. The 11 affected tickers were ADBE, ASML, ASTS, BMNR, CRM, EWY, GS, HIMS, IREN, PYPL, and SOXL. See `devex-log.md` for the detailed timestamped field notes and `data/monitor.sqlite3` for the observations.
+The first full sweep completed in 45.8 seconds: 114/114 successful responses, 65 computable gaps, 38 bStocks rows with `stockInfo.price=null`, and 11 xStocks rows with `tokenInfo.price=null` (the multiplier was present). No transport or API errors. The 11 affected tickers were ADBE, ASML, ASTS, BMNR, CRM, EWY, GS, HIMS, IREN, PYPL, and SOXL. The saved public observations are in data/monitor.sqlite3; this is a historical snapshot through Poll 10, not a live feed.
 
 The latest verified full public poll is Poll 10, completed `2026-10-05T20:01:10Z`, just after the scheduled U.S. close: 114/114 responses, 65 reference gaps, 38 missing references, 11 incomplete xStocks token prices, and 0 request/API errors. The separate bStocks↔Ondo comparison was available for 38/38 tickers; its median signed basis was −0.09 bp, observed range −46.07 to +57.95 bp, with no pair above |100| bp. SOXL's basis was −10.66 bp; AAPL's was −7.44 bp. The earlier off-hours SOXL reading of +216.9 bp from Poll 7 did not recur in Polls 8–10, but the public API fields do not establish why. These are API observations, not verified execution opportunities.
 
