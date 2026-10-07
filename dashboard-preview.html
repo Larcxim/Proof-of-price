@@ -32,6 +32,40 @@
     .map-shell{border-color:#e2e6ea!important;background:#fff!important;box-shadow:0 8px 28px rgba(30,35,41,.035)}.controls{border-color:#e7eaee!important;background:#fafbfc!important}.filter{color:#616a76!important}.filter:hover,.filter.active{border-color:#ead78e!important;background:#fff8df!important;color:#1e2329!important}.filter.active{color:#866100!important}.search{border-color:#d8dde3!important;background:#fff!important;color:#1e2329!important}.search:focus{border-color:#d5a800!important;box-shadow:0 0 0 3px rgba(240,185,11,.12)!important}.search::placeholder{color:#9299a3!important}.table-head th{background:#f7f8fa!important;color:#68717d!important;border-bottom-color:#e2e6ea!important}.data-row{border-bottom-color:#eceff2!important}.data-row:hover{background:rgba(240,185,11,.055)!important}.asset-contract{color:#8b939e!important}.reference-source{color:#6d7681!important}.venue-gap.good{color:#127b65!important}.venue-gap.positive{color:#8e6900!important}.venue-gap.negative{color:#4d6686!important}.venue-gap.missing{color:#916600!important}.venue-gap.incomplete{color:#c6483d!important}.venue-meta{color:#828b96!important}.quality-dot{background:#16836d!important}.quality.outlier .quality-dot{background:#d14f42!important;box-shadow:0 0 0 3px rgba(209,79,66,.1)!important}.quality.partial .quality-dot{background:#d09a00!important}.quality-text{color:#434b55!important}.quality-note{color:#7d8691!important}.empty{color:#68717c!important}
     .panel{border-color:#e2e6ea!important;background:#fff!important;box-shadow:0 8px 28px rgba(30,35,41,.035)}.panel-title{color:#1e2329}.panel-sub{color:#69727e!important}.select{background:#fff!important;border-color:#d8dde3!important;color:#1e2329!important}.chart-empty{color:#6a7380!important}.hist-note{color:#7e8792!important}.issues{color:#1e2329}.issue{border-color:#e8ebef!important;background:#fbfcfd!important}.issue-icon.amber{color:#896300!important;background:rgba(240,185,11,.14)!important}.issue-icon.red{color:#bd4237!important;background:rgba(198,72,61,.1)!important}.issue-icon.teal{color:#116f5b!important;background:rgba(19,125,104,.09)!important}.issue-title{color:#303741}.issue-copy{color:#68717c!important}
     .method-card{border-color:#e2e6ea!important;background:#fff!important}.formula{color:#775900!important;background:#fff8de!important}.method-card p{color:#68717c!important}.method-card strong{color:#2d343d!important}.foot{border-top-color:#e0e4e9!important;color:#717a85!important}.live-api-card{background:#fff!important;border-color:#e2e6ea!important;box-shadow:0 6px 18px rgba(30,35,41,.035)}.live-api-button{background:#f0b90b!important;color:#181a20!important;border-color:#e0ae00!important}.live-api-output{background:#fffdf5!important;border-color:#e7d79a!important;color:#27303a!important}.live-api-note{color:#68717c!important}.code{color:#4e5864}
+    .quick-guide{border:1px solid #e2e6ea!important;border-left:4px solid #f0b90b!important;border-radius:14px;background:#fff!important;box-shadow:0 6px 22px rgba(30,35,41,.035);padding:20px 22px!important;margin-top:0!important}
+    .quick-guide-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:15px}
+    .quick-guide-kicker{font:700 9px ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#866300}
+    .quick-guide-title{font-size:18px;letter-spacing:-.025em;margin:5px 0 5px;color:#1e2329}
+    .quick-guide-intro{font-size:11px;line-height:1.6;color:#5e6673;max-width:820px;margin:0}
+    .quick-guide-link{flex:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid #d7ad00;border-radius:8px;padding:8px 11px;background:#f0b90b;color:#181a20;text-decoration:none;font-size:10px;font-weight:700;white-space:nowrap}
+    .quick-guide-link:hover,.quick-guide-link:focus-visible{background:#ffd84d;outline:2px solid #1e2329;outline-offset:2px}
+    .quick-guide-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;list-style:none;padding:0;margin:0}
+    .quick-guide-step{display:grid;grid-template-columns:25px 1fr;gap:9px;align-items:start;border:1px solid #e5e8ec;border-radius:10px;padding:11px;background:#fff}
+    .quick-guide-number{display:grid;place-items:center;width:24px;height:24px;border-radius:7px;background:#f0b90b;color:#181a20;font:700 10px ui-monospace,monospace}
+    .quick-guide-step h3{font-size:11px;line-height:1.35;margin:1px 0 4px;color:#1e2329}
+    .quick-guide-step p{font-size:9px;line-height:1.55;color:#5e6673;margin:0}
+    .quick-guide-step strong{color:#1e2329}
+    .quick-guide-glossary{display:flex;gap:9px;align-items:flex-start;margin-top:10px;padding:8px 11px;border:1px solid #e5e8ec;border-radius:8px;background:#f7f8fa;color:#41464f;font-size:9px;line-height:1.5}
+    .quick-guide-glossary strong{color:#1e2329;white-space:nowrap}
+    .quick-guide-note{display:flex;gap:9px;align-items:flex-start;margin-top:11px;padding:9px 11px;border-radius:8px;background:#fff8df;color:#41464f;font-size:9px;line-height:1.55}
+    .quick-guide-note strong{color:#5f4800;white-space:nowrap}
+    @media(max-width:900px){.quick-guide-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:560px){.quick-guide{padding:15px!important}.quick-guide-head{display:block}.quick-guide-link{margin-top:10px}.quick-guide-steps{grid-template-columns:1fr}.quick-guide-note,.quick-guide-glossary{display:block}.quick-guide-note strong,.quick-guide-glossary strong{display:block;margin-bottom:3px}}
+    /* Restrained charcoal, black, yellow, and neutral-gray interface palette. */
+    :root{--teal:#4d5057!important;--blue:#62666e!important;--red:#846200!important}
+    header{background:#181a20!important;border-bottom-color:#343740!important}
+    .brand-name{color:#fff!important}.brand-sub{color:#c4c7cd!important}.head-right{color:#e1e3e7!important}.head-sep{background:#4a4d55!important}
+    .metric.alert .metric-value{color:#806000!important}
+    .basis-shell{background:linear-gradient(145deg,#181a20,#2a2d33)!important;border-color:#3d4149!important;box-shadow:0 8px 25px rgba(24,26,32,.12)!important}
+    .basis-title,.basis-value{color:#f7f7f8!important}.basis-copy,.basis-label,.basis-foot,.basis-chart-title{color:#c2c5cb!important}
+    .basis-stat{background:#22252b!important;border-color:#444850!important}.basis-chip{background:#1b1d22!important;border-color:#464a52!important;color:#f1f2f4!important}
+    .basis-chip.above{color:#ffd84d!important}.basis-chip.below{color:#d0d3d8!important}
+    .controls{background:#22252b!important;border-bottom-color:#41454d!important}
+    .filter{color:#d0d2d7!important}.filter:hover,.filter.active{background:#f0b90b!important;border-color:#f0b90b!important;color:#181a20!important}.filter.active{color:#181a20!important}
+    .table-head th{background:#22252b!important;color:#f2f3f5!important;border-bottom-color:#454951!important}
+    .venue-gap.good{color:#34373e!important}.venue-gap.positive,.venue-gap.missing,.venue-gap.incomplete{color:#806000!important}.venue-gap.negative{color:#62666e!important}
+    .quality-dot{background:#62666e!important}.quality.outlier .quality-dot{background:#f0b90b!important;box-shadow:0 0 0 3px rgba(240,185,11,.18)!important}.quality.partial .quality-dot{background:#a77d00!important}
+    .quality-text{color:#34373e!important}.issue-icon.red{color:#695000!important;background:rgba(240,185,11,.2)!important}.issue-icon.teal{color:#24262b!important;background:#e2e4e8!important}
   </style>
 </head>
 <body>
@@ -54,8 +88,39 @@
       </aside>
     </section>
 
+    <section class="section quick-guide" id="how-to-read" aria-labelledby="quick-guide-title">
+      <div class="quick-guide-head">
+        <div>
+          <div class="quick-guide-kicker">Start here · no wallet needed to view</div>
+          <h2 class="quick-guide-title" id="quick-guide-title">How to read this comparison</h2>
+          <p class="quick-guide-intro">Proof of Price shows read-only price information for tokenized shares on BSC. You can explore the dashboard without connecting a wallet or making a transaction.</p>
+        </div>
+        <a class="quick-guide-link" href="#ticker-search">Choose a ticker ↓</a>
+      </div>
+      <ol class="quick-guide-steps" aria-label="Four steps to read the dashboard">
+        <li class="quick-guide-step">
+          <span class="quick-guide-number" aria-hidden="true">01</span>
+          <div><h3>Choose a ticker</h3><p>Search the table, then select a row to see that ticker’s history.</p></div>
+        </li>
+        <li class="quick-guide-step">
+          <span class="quick-guide-number" aria-hidden="true">02</span>
+          <div><h3>Compare per share</h3><p>Each token price is adjusted by its reported share ratio so different token units can be compared on a per-share basis.</p></div>
+        </li>
+        <li class="quick-guide-step">
+          <span class="quick-guide-number" aria-hidden="true">03</span>
+          <div><h3>Keep the comparisons separate</h3><p><strong>Reference gap</strong> compares with an API-reported underlying-price field. <strong>Direct basis</strong> compares bStocks with Ondo; positive means bStocks is higher.</p></div>
+        </li>
+        <li class="quick-guide-step">
+          <span class="quick-guide-number" aria-hidden="true">04</span>
+          <div><h3>Read the caveats</h3><p>Missing is not zero. Market status is what the API reports, not a definitive market-hours signal. This page does not check liquidity, fees, slippage, or executable routes.</p></div>
+        </li>
+      </ol>
+      <div class="quick-guide-glossary" role="note"><strong>bp = basis point</strong><span>1 bp = 0.01%; 100 bp = 1%.</span></div>
+      <div class="quick-guide-note"><strong>Read-only research</strong><span>A displayed spread is an observation, not evidence of a trade opportunity. The dashboard does not connect a wallet or place transactions.</span></div>
+    </section>
+
     <section class="metrics" aria-label="Latest collector metrics">
-      <div class="metric accent"><div class="metric-label">Triple-listed tickers</div><div class="metric-value">38</div><div class="metric-foot">Ondo · xStocks · bStocks</div></div><div class="metric accent"><div class="metric-label">Reference-quote gaps</div><div class="metric-value">65 / 114</div><div class="metric-foot">Per-share comparisons vs stockInfo.price</div></div><div class="metric warn"><div class="metric-label">Missing references</div><div class="metric-value">38</div><div class="metric-foot">Responses with no source quote field</div></div><div class="metric alert"><div class="metric-label">Incomplete / API errors</div><div class="metric-value">11 / 0</div><div class="metric-foot">Missing token metrics / failed requests</div></div>
+      <div class="metric accent"><div class="metric-label">Triple-listed tickers</div><div class="metric-value">38</div><div class="metric-foot">Ondo · xStocks · bStocks</div></div><div class="metric accent"><div class="metric-label">Reference-quote gaps</div><div class="metric-value">65 / 114</div><div class="metric-foot">Per-share comparisons vs stockInfo.price</div></div><div class="metric warn"><div class="metric-label">Missing references</div><div class="metric-value">38</div><div class="metric-foot">Responses with no source quote field</div></div><div class="metric alert"><div class="metric-label">Incomplete feed rows</div><div class="metric-value">11</div><div class="metric-foot">0 request/API failures</div></div>
     </section>
 
     <section class="section" aria-label="Direct token-to-token basis">
@@ -85,7 +150,7 @@
       <div class="panel">
         <div class="panel-head"><div><div class="section-kicker">02 / time series</div><div class="panel-title">Reference-quote gap history</div><div class="panel-sub">Only rows with both token metrics and a source quote are plotted. The logarithmic y-scale keeps isolated outliers from flattening every other series.</div></div><select class="select" id="history-ticker" aria-label="Select ticker for history"><option value="AAPL">AAPL</option><option value="ADBE">ADBE</option><option value="AMD">AMD</option><option value="AMZN">AMZN</option><option value="ASML">ASML</option><option value="ASTS">ASTS</option><option value="AVGO">AVGO</option><option value="BMNR">BMNR</option><option value="COIN">COIN</option><option value="CRCL">CRCL</option><option value="CRM">CRM</option><option value="CRWD">CRWD</option><option value="EWY">EWY</option><option value="GME">GME</option><option value="GOOGL">GOOGL</option><option value="GS">GS</option><option value="HIMS">HIMS</option><option value="HOOD">HOOD</option><option value="IBM">IBM</option><option value="INTC">INTC</option><option value="IREN">IREN</option><option value="META">META</option><option value="MRVL">MRVL</option><option value="MSFT">MSFT</option><option value="MSTR">MSTR</option><option value="MU">MU</option><option value="NFLX">NFLX</option><option value="NVDA">NVDA</option><option value="ORCL">ORCL</option><option value="PLTR">PLTR</option><option value="PYPL">PYPL</option><option value="QQQ">QQQ</option><option value="SOXL">SOXL</option><option value="SPCX">SPCX</option><option value="SPY">SPY</option><option value="TQQQ">TQQQ</option><option value="TSLA">TSLA</option><option value="TSM">TSM</option></select></div>
         <div class="chart-wrap"><canvas class="chart" id="history-chart"></canvas><div class="chart-empty" id="chart-empty">Loading observations…</div></div>
-        <div class="chart-legend"><span><i class="legend-mark" style="background:#f0b90b"></i>Ondo vs reference</span><span><i class="legend-mark" style="background:#343a40"></i>xStocks vs reference</span><span><i class="legend-mark" style="background:#5b8f75"></i>bStocks vs reference</span></div>
+        <div class="chart-legend"><span><i class="legend-mark" style="background:#f0b90b"></i>Ondo vs reference</span><span><i class="legend-mark" style="background:#343a40"></i>xStocks vs reference</span><span><i class="legend-mark" style="background:#7b8088"></i>bStocks vs reference</span></div>
         <div class="hist-note" id="history-note">Reference-quote comparisons. Times are UTC; these are poll times, not exchange-published quote timestamps.</div>
         <div class="basis-chart-title">Direct token-to-token basis · bStocks vs Ondo · no underlying quote</div>
         <div class="chart-wrap pairwise-chart-wrap"><canvas class="chart" id="pairwise-chart"></canvas><div class="chart-empty" id="pairwise-empty">Loading pairwise history…</div></div>
@@ -150,7 +215,7 @@
       const liveButton=document.getElementById('live-fetch');
       const liveResult=document.getElementById('live-result');
       if(pageData.static_preview){liveButton.disabled=true;liveResult.textContent='This is an offline snapshot. Live API checks are available only when the dashboard is running on your private local server.'}
-      const colors={ondo:'#f0b90b',xstocks:'#343a40',bstocks:'#5b8f75'};
+      const colors={ondo:'#f0b90b',xstocks:'#343a40',bstocks:'#7b8088'};
       const labels={ondo:'Ondo',xstocks:'xStocks',bstocks:'bStocks'};
       function fmtBps(v){return (v>0?'+':'')+new Intl.NumberFormat('en-US',{maximumFractionDigits:1}).format(v)+' bp'}
       function drawPairwise(history){

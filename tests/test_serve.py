@@ -85,6 +85,23 @@ class PairwiseBasisTests(unittest.TestCase):
             self.assertAlmostEqual(history["pairwise"][0]["basis_bps"], 100.0)
 
 
+class OnboardingGuideTests(unittest.TestCase):
+    def test_plain_language_read_only_guide_is_present(self):
+        self.assertIn('id="how-to-read"', serve.HTML_TEMPLATE)
+        self.assertIn("no wallet needed to view", serve.HTML_TEMPLATE.lower())
+        self.assertIn("positive means bStocks is higher", serve.HTML_TEMPLATE)
+        self.assertIn("1 bp = 0.01%; 100 bp = 1%", serve.HTML_TEMPLATE)
+        self.assertIn("Missing is not zero", serve.HTML_TEMPLATE)
+        self.assertIn("does not connect a wallet or place transactions", serve.HTML_TEMPLATE)
+
+
+class DashboardPaletteTests(unittest.TestCase):
+    def test_charcoal_yellow_palette_is_applied_to_primary_surfaces(self):
+        self.assertIn("header{background:#181a20!important", serve.HTML_TEMPLATE)
+        self.assertIn("linear-gradient(145deg,#181a20,#2a2d33)", serve.HTML_TEMPLATE)
+        self.assertIn("bstocks:'#7b8088'", serve.HTML_TEMPLATE)
+
+
 class LiveApiRouteTests(unittest.TestCase):
     def test_live_route_returns_safe_error_without_credentials(self):
         server = ThreadingHTTPServer(("127.0.0.1", 0), serve.DashboardHandler)
