@@ -1,0 +1,35 @@
+PROOF OF PRICE v11 - capture log
+frames=3816 duration=159.0s fps=24 size=1280x720
+video=libx264 yuv420p crf=18  audio=AAC 48kHz mono, bed peak -2.72 dBFS pre-encode
+fonts=Montserrat-BoldItalic, Roboto-Medium, DejaVuSansMono
+capture slots:
+  b2: slot_b2_dashboard_overview.png -> present
+  b4: slot_b4_poll10_sweep.png -> present
+  b6: slot_b6_basis_table.png -> present
+  b8: slot_b8_aapl_rows.png -> present
+claims: all figures are saved Poll 7/Poll 10 observations from the project's
+own capture; API semantics per Binance Web3 tokenized-securities docs.
+No wallet connection, transaction, route quote or trade is shown or claimed.
+POLL 10 CAPTURE TIME (UTC): observations 2026-10-05T20:00:24Z; pairwise completed 20:01:10Z
+US MARKET STATUS AT POLL 10: CLOSED (16:00-16:01 EDT, at/just after cash close)
+POLL 7 CAPTURE TIME (UTC): 2026-10-05T02:54:51Z (US market closed)
+functionality beat: six interaction states (view, search=AAPL, filter
+  incomplete feeds, filter large reference gaps, row-select AAPL, ticker
+  switch SOXL) driven offline in headless chromium on the static preview;
+  cursor positions are drawn from the recorded click coordinates.
+slot provenance: plates rendered 2026-10-08 from uploads/dashboard-preview.html
+  (self-declared static_preview=true) via headless chromium; these are UI renders
+  of the saved data, NOT captures of a deployed instance.
+audio v2: ambient bed + event sound design (thud/tick per beat, scroll
+  whoosh 13.3-26.5s, UI clicks on the six functionality states, ticks at
+  number landings, chime at lockup); mix peak -2.72 dBFS; video stream copied.
+audio v3: calm male voiceover added (10 segments, ducked bed+foley under
+  narration), mix peak -2.72 dBFS; video stream copied; captions unchanged.
+audio v3: calm male voiceover added (10 segments, ducked bed+foley under
+  narration), mix peak -2.72 dBFS; video stream copied; captions unchanged.
+audio v3: calm male voiceover added (10 segments, ducked bed+foley under
+  narration), mix peak -2.72 dBFS; video stream copied; captions unchanged.
+audio v3: calm male voiceover added (10 segments, ducked bed+foley under
+  narration), mix peak -2.72 dBFS; video stream copied; captions unchanged.
+audio v3: calm male voiceover added (10 segments, ducked bed+foley under
+  narration), mix peak -2.72 dBFS; video stream copied; captions unchanged.
