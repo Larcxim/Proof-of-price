@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Hosted entry point for the password-protected Proof of Price demo.
+"""Hosted entry point for the Proof of Price demo.
 
-The existing dashboard/API handlers remain in serve.py. This wrapper adds HTTP
-Basic authentication for every route except the content-free /health check,
-reads Render's PORT, and throttles signed live API requests. It never prints
-credentials or authorization headers.
+The existing dashboard/API handlers remain in serve.py. This wrapper adds
+optional HTTP Basic authentication (public by default when DEMO_PUBLIC is set
+or DEMO_PASSWORD is absent), reads Render's PORT, and throttles signed live
+API requests. It never prints credentials or authorization headers. Startup
+messages are flushed so they appear in host logs immediately.
 """
 from __future__ import annotations
 
@@ -21,6 +22,20 @@ from urllib.parse import urlparse
 from serve import DashboardHandler, DEFAULT_DB, DEFAULT_UNIVERSE
 
 LIVE_REQUEST_INTERVAL_SECONDS = 5.0
+
+
+def public_mode() -> bool:
+    """True when the demo should serve without the Basic Auth gate.
+
+    Public mode is explicit (DEMO_PUBLIC set to 1/true/yes/on) or implied by
+    the absence of DEMO_PASSWORD, so a judge-facing link can be shared with no
+    prompt. The dashboard is read-only either way, and the live-request
+    cooldown below still applies.
+    """
+    flag = os.environ.get("DEMO_PUBLIC", "").strip().lower()
+    if flag in {"1", "true", "yes", "on"}:
+        return True
+    return not os.environ.get("DEMO_PASSWORD", "").strip()
 
 
 class LiveRequestLimiter:
@@ -60,7 +75,8 @@ def authorization_matches(header: str, username: str, password: str) -> bool:
 
 
 class ProtectedDashboardHandler(DashboardHandler):
-    """Require a judge password for dashboard data and API routes."""
+    """Require a judge password for dashboard data and API routes,
+    unless the host explicitly runs the demo in public mode."""
 
     def _send_auth_required(self) -> None:
         body = b"Proof of Price demo access requires a username and password."
@@ -95,11 +111,12 @@ class ProtectedDashboardHandler(DashboardHandler):
             super().do_GET()
             return
 
-        username = os.environ.get("DEMO_USERNAME", "judge")
-        password = os.environ.get("DEMO_PASSWORD", "")
-        if not authorization_matches(self.headers.get("Authorization", ""), username, password):
-            self._send_auth_required()
-            return
+        if not public_mode():
+            username = os.environ.get("DEMO_USERNAME", "judge")
+            password = os.environ.get("DEMO_PASSWORD", "")
+            if not authorization_matches(self.headers.get("Authorization", ""), username, password):
+                self._send_auth_required()
+                return
 
         if path == "/api/live-rwa":
             allowed, retry_after = _live_limiter.admit()
@@ -128,18 +145,24 @@ class ProtectedDashboardHandler(DashboardHandler):
 
 
 def main() -> int:
-    username = os.environ.get("DEMO_USERNAME", "judge").strip()
-    password = os.environ.get("DEMO_PASSWORD", "")
-    if not username or not password:
-        raise SystemExit("Set DEMO_USERNAME and DEMO_PASSWORD as private host environment variables before starting.")
-    if len(password) < 16:
-        raise SystemExit("DEMO_PASSWORD must be at least 16 characters; use a private, unique passphrase.")
+    if public_mode():
+        print("PUBLIC MODE: serving without password protection "
+              "(DEMO_PUBLIC is set or DEMO_PASSWORD is absent).", flush=True)
+    else:
+        username = os.environ.get("DEMO_USERNAME", "judge").strip()
+        password = os.environ.get("DEMO_PASSWORD", "")
+        if not username or not password:
+            raise SystemExit("Set DEMO_USERNAME and DEMO_PASSWORD as private host environment "
+                             "variables, or set DEMO_PUBLIC=true to serve without the gate.")
+        if len(password) < 16:
+            raise SystemExit("DEMO_PASSWORD must be at least 16 characters; use a private, unique "
+                             "passphrase, or set DEMO_PUBLIC=true to serve without the gate.")
 
     missing_api = [name for name in ("OC_API_KEY", "OC_SECRET_KEY") if not os.environ.get(name, "").strip()]
     if missing_api:
-        # Keep the dashboard protected and available, but make the live-key gap explicit in host logs.
+        # Keep the dashboard available, but make the live-key gap explicit in host logs.
         print("WARNING: Binance Web3 live API is not configured; missing server environment variable(s): "
-              + ", ".join(missing_api))
+              + ", ".join(missing_api), flush=True)
 
     try:
         port = int(os.environ.get("PORT", "10000"))
@@ -152,11 +175,13 @@ def main() -> int:
     DashboardHandler.universe_path = DEFAULT_UNIVERSE
     server = ThreadingHTTPServer(("0.0.0.0", port), ProtectedDashboardHandler)
     server.daemon_threads = True
-    print(f"Protected Proof of Price demo listening on port {port}; /health is public, other routes require Basic Auth.")
+    mode_text = "public (no password)" if public_mode() else "password-protected (Basic Auth)"
+    print(f"Proof of Price demo listening on port {port} in {mode_text} mode; /health is always public.",
+          flush=True)
     try:
         server.serve_forever(poll_interval=0.5)
     except KeyboardInterrupt:
-        print("\nHosted dashboard server stopped.")
+        print("\nHosted dashboard server stopped.", flush=True)
     finally:
         server.server_close()
     return 0
