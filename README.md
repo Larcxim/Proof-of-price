@@ -3,7 +3,7 @@
 A small, **read-only** BSC monitor for the 38 tickers that have Ondo, xStocks, and bStocks representations. Its saved historical collection uses Binance's public RWA data endpoint and does not need credentials. The local dashboard now also offers an optional, separate live check through the signed Binance Web3 RWA Data API; that check uses a private API key/secret, but no wallet or trade.
 
 **Deployed judge demo (Frankfurt, public — no password):**
-https://proof-of-price-demo.onrender.com — read-only dashboard; the service sleeps on Render's free plan, so open it a minute before use.
+https://proof-of-price.onrender.com — read-only dashboard; the service sleeps on Render's free plan, so open it a minute before use.
 
 ## What it measures
 
