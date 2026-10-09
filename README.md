@@ -2,6 +2,9 @@
 
 A small, **read-only** BSC monitor for the 38 tickers that have Ondo, xStocks, and bStocks representations. Its saved historical collection uses Binance's public RWA data endpoint and does not need credentials. The local dashboard now also offers an optional, separate live check through the signed Binance Web3 RWA Data API; that check uses a private API key/secret, but no wallet or trade.
 
+**Deployed judge demo (Frankfurt, public — no password):**
+https://proof-of-price-demo.onrender.com — read-only dashboard; the service sleeps on Render's free plan, so open it a minute before use.
+
 ## What it measures
 
 For each venue, the collector uses the per-share conversion—not the API's circular `referencePrice` field:
@@ -28,6 +31,12 @@ The local served dashboard includes a button that makes two **read-only, signed*
 For a private local run, set `OC_API_KEY` and `OC_SECRET_KEY` in a local `.env` file based on `.env.example`, or use `Start-Proof-of-Price.command` to enter them privately for that server session. Keep the credentials out of this shared workspace, browser code, and public repo. Do not share them in chat.
 
 The spread is a **data comparison**, not proof that a trade is executable or profitable. A quote can be stale, a token can have thin liquidity, and the unexplained xStocks outliers already found must not be presented as arbitrage.
+
+## Demo video (submission)
+
+`proof-of-price-hackathon-v11.mp4` — 2:39, 1280×720, 24 fps, H.264/AAC, with narration: a calm male voiceover mixed over a ducked ambient bed and procedural foley. Structure: title + SOXL Poll 7 hook; what the build is (no wallet, no transaction, no route quote, no trade); a full-brightness scroll-through of the saved Poll 10 view; a functionality beat showing search, both filters, row-select and ticker-switch driven offline; sweep maths (114 requests, 65/38/11/0); normalize-first method; direct basis 38/38 (median −0.09 bp, range −46.07…+57.95 bp); SOXL poll sequence; AAPL pairwise; request hygiene; what the feed does not establish (Poll 10 captured 2026-10-05 20:00–20:01 UTC, US cash market closed); scope and limits; submission pack.
+
+Dashboard imagery in the video carries the tag `STATIC PREVIEW UI - SAVED POLL 10 DATA`: those plates are headless-browser renders of `dashboard-preview.html` (self-declared `static_preview=true`), not captures of the deployed instance. Observed data is labelled `SAVED / OBSERVED … NOT QUOTE TIME`; designed graphics `DESIGNED MOTION - SAVED DATA`. The render pipeline, captions (SRT), poster and capture log live in `demo/`; reproduce the picture with `python3 demo/make_final_v11.py` — the narration mix is documented by `demo/vo/manifest.json` and `demo/mix_voice.py` (raw voice segments are not committed).
 
 ## Run it
 
@@ -68,7 +77,7 @@ This updates `data/universe.json` before polling. The checked-in snapshot is der
 
 The first full sweep completed in 45.8 seconds: 114/114 successful responses, 65 computable gaps, 38 bStocks rows with `stockInfo.price=null`, and 11 xStocks rows with `tokenInfo.price=null` (the multiplier was present). No transport or API errors. The 11 affected tickers were ADBE, ASML, ASTS, BMNR, CRM, EWY, GS, HIMS, IREN, PYPL, and SOXL. The saved public observations are in `data/monitor.sqlite3`; this is a historical snapshot through Poll 10, not a live feed.
 
-The latest verified full public poll is Poll 10, completed `2026-10-05T20:01:10Z`, just after the scheduled U.S. close: 114/114 responses, 65 reference gaps, 38 missing references, 11 incomplete xStocks token prices, and 0 request/API errors. The separate bStocks↔Ondo comparison was available for 38/38 tickers; its median signed basis was −0.09 bp, observed range −46.07 to +57.95 bp, with no pair above |100| bp. SOXL's basis was −10.66 bp; AAPL's was −7.44 bp. The earlier off-hours SOXL reading of +216.9 bp from Poll 7 did not recur in Polls 8–10, but the public API fields do not establish why. These are API observations, not verified execution opportunities.
+The latest verified full public poll is Poll 10, completed `2026-10-05T20:01:10Z`, just after the scheduled U.S. close: 114/114 responses, 65 reference gaps, 38 missing references, 11 incomplete xStocks token prices, and 0 request/API errors. The separate bStocks↔Ondo comparison was available for 38/38 tickers; its median signed basis was −0.09 bp, observed range −46.07 to +57.95 bp, with no pair above |100| bp. SOXL's basis was −10.66 bp; AAPL's was −7.44 bp. The earlier off-hours SOXL reading of +216.9 bp from Poll 7 did not recur in Polls 8–10, but the public API fields do not establish why; its audit trail is in [soxl-poll-verification.md](soxl-poll-verification.md). These are API observations, not verified execution opportunities.
 
 AAPL's Ondo response also exposed an API status-field ambiguity: `marketStatus="offhours"` while `openState=true` on Sunday. Keep the source fields separate; don't use `openState` alone to decide whether U.S. equity trading is open.
 
